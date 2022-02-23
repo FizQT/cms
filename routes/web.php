@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\TugasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,11 +45,7 @@ use App\Http\Controllers\ArticleController;
 //NO 4
 // Route::get('/', [HomeController::class, 'index']);
 // Route::get('/about', [AboutController::class, 'about']);
-Route::get('/articles/{id}', [ArticleController::class, 'articles']);
+// Route::get('/articles/{id}', [ArticleController::class, 'articles']);
 
 //PRAKTIKUM 3
-//NO 1
-
-//NO 2
-
-//NO 3
+Route::get('/', [TugasController::class, 'index']);
