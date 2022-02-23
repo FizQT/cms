@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,21 +25,22 @@ use Illuminate\Support\Facades\Route;
 // });
 //NO 2
 // Route::get('/about', function () {
-//     return "2041720078,";
-//     return " HAFIZH IZHAR DARMANSYAH,";
-//     return " TI - 2G";
+    // return "2041720078, HAFIZH IZHAR DARMANSYAH, TI - 2G";
 // });
 //NO 3
-Route::get('/articles/{id}', function ($id) {
-    return "Ini adalah halaman Artikel dengan ID : " . $id;
-});
+// Route::get('/articles/{id}', function ($id) {
+    // return "Ini adalah halaman Artikel dengan ID : " . $id;
+// });
 
 //PRAKTIKUM 2
 //NO 1
-
+// Route::get('/', [PageController::class, 'index']);
 //NO 2
-
+// Route::get('/about', [PageController::class, 'about']);
 //NO 3
+Route::get('/articles/{id}', [PageController::class, 'articles']);
+//NO 4
+
 
 //PRAKTIKUM 3
 //NO 1
