@@ -48,4 +48,21 @@ use App\Http\Controllers\TugasController;
 // Route::get('/articles/{id}', [ArticleController::class, 'articles']);
 
 //PRAKTIKUM 3
-Route::get('/', [TugasController::class, 'index']);
+// Route::get('/', [TugasController::class, 'index']);
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//PRAKTIKUM 1 MINGGU 3
+Route::get('/', function () {
+    return view('index');
+});
