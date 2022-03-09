@@ -66,3 +66,6 @@ use App\Http\Controllers\TugasController;
 Route::get('/', function () {
     return view('index');
 });
+
+//PRAKTIKUM 1 MINGGU 4
+Route::get('/post', [App\Http\Controllers\TugasController::class, 'index']);

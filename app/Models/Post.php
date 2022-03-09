@@ -7,9 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    protected $table = 'my_posts';
-    protected $primaryKey = 'my_id';
+    protected $table = 'posts';
+    protected $primaryKey = 'id';
     protected $keyType = 'string';
     public $incrementing = false;
 
+    use HasFactory;
 }

@@ -136,6 +136,15 @@
             </section>
             <!--End-->
 
+            <br>
+            <br>
+            <br>
+            <h1>HARGA PAKET</h1>
+            @foreach ($data as $item)
+                <p>Paket    : {{$item['paket']}}</p>
+                <p>harga    : {{$item['harga']}}</p>
+            @endforeach
+
             <!----resort-overview--->
             <section class="resort-overview-block">
                 <div class="container">
