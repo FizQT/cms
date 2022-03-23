@@ -68,4 +68,13 @@ Route::get('/', function () {
 });
 
 //PRAKTIKUM 1 MINGGU 4
+Route::get('/', [App\Http\Controllers\TugasController::class, 'index']);
+
 Route::get('/post', [App\Http\Controllers\TugasController::class, 'index']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
